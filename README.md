@@ -38,7 +38,7 @@ This device tree was tested and is fully compatible with [minimal-manifest-twrp]
 2. In the root folder of the fetched repo, clone the device tree:
 
 ```bash
-git clone https://github.com/TeamWin/android_device_samsung_a54x.git -b android-12.1 device/samsung/gts9fewifi
+git clone https://github.com/Anghirrim/android_device_samsung_gts9fewifi.git -b android-12.1 device/samsung/gts9fewifi
 ```
 
 3. To build:
