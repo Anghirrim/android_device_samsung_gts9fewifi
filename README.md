@@ -1,8 +1,8 @@
-# TWRP Device Tree for Samsung Galaxy A54 5G
+# TWRP Device Tree for Samsung Galaxy Tab S9 FE Wifi (SM-X510)
 
-The Galaxy A54 5G (codenamed _"a54x"_) is an upper-mid-range smartphone from Samsung.
+The Galaxy Tab S9 FE Wifi (codenamed _"gts9fewifi"_) is an upper-mid-range tablet from Samsung.
 
-It was announced and released in March 2023.
+It was announced and released in October 2023.
 
 ## Device specifications
 
@@ -14,18 +14,16 @@ It was announced and released in March 2023.
 | Memory                       | 6GB / 8GB RAM (LPDDR4X)                                                        |
 | Shipped OS                   | Android 13 (One UI 5.1)                                                        |
 | Storage                      | 128GB / 256GB (UFS 2.2)                                                        |
-| SIM                          | Single SIM (Nano-SIM, eSIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)       |
-| MicroSD                      | Up to 1TB                                                                      |
-| Battery                      | 5000mAh Li-Po (non-removable), 25W fast charge                                 |
-| Dimensions                   | 158.2 x 76.7 x 8.2 mm (6.23 x 3.02 x 0.32 in)                                  |
-| Display                      | 6.4", 1080 x 2340 pixels, 19.5:9 ratio, Super AMOLED, 120Hz (~403 ppi density) |
-| Rear Camera 1 (IMX766)       | 50 MP, f/1.8, (wide), 1/1.56", 1.0µm, PDAF, OIS                                |
-| Rear Camera 2 (S5K3L6)       | 12 MP, f/2.2, 123˚ (ultrawide), 1.12µm                                         |
-| Rear Camera 3 (GC5035)       | 5 MP, f/2.4, (macro)                                                           |
-| Front Camera (IMX616/S5KGD2) | 32 MP, f/2.2, 26mm (wide), 1/2.8", 0.8µm                                       |
-| Fingerprint                  | Goodix GW9578 (under display, optical)                                         |
-| Sensors                      | Accelerometer, Gyro, Proximity (virtual), Compass, Hall IC, Grip               |
-| Extras                       | Dual speakers, NFC, MST                                                        |
+| MicroSD                      | microSDXC                                                                      |
+| Battery                      | Li-Po 8000 mAh (non-removable), 45W wired, QC2.0                               |
+| Dimensions                   | 254.3 x 165.8 x 6.5 mm (10.01 x 6.53 x 0.26 in)                                |
+| Display                      | 10.9", 1440 x 2304 pixels, 16:10 ratio, IPS LCD, 90Hz (~249 ppi density)       |
+| Rear Camera                  | 8 MP, (wide), Video 	4K@30fps, 1080p@30fps                                     |
+| Front Camera                 | 12 MP, (ultrawide)                                                             |
+| Fingerprint                  | Yes, side mounted                                                              |
+| Sensors                      | Accelerometer, gyro, compass, proximity (accessories only)                     |
+| Positioning                  | GPS, GALILEO, GLONASS, BDS, QZSS                                               |
+| Extras                       | IP68 dust/water resistant, Stereo speakers tuned by AKG, USB-C 2.0             |
 
 ## Kernel source 
 
@@ -40,7 +38,7 @@ This device tree was tested and is fully compatible with [minimal-manifest-twrp]
 2. In the root folder of the fetched repo, clone the device tree:
 
 ```bash
-git clone https://github.com/TeamWin/android_device_samsung_a54x.git -b android-12.1 device/samsung/a54x
+git clone https://github.com/TeamWin/android_device_samsung_a54x.git -b android-12.1 device/samsung/gts9fewifi
 ```
 
 3. To build:
@@ -48,7 +46,7 @@ git clone https://github.com/TeamWin/android_device_samsung_a54x.git -b android-
 ```bash
 export ALLOW_MISSING_DEPENDENCIES=true
 . build/envsetup.sh
-lunch twrp_a54x-eng
+lunch twrp_gts9fewifi-eng
 mka recoveryimage
 ```
 
