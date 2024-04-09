@@ -103,7 +103,7 @@ RECOVERY_SDCARD_ON_DATA := true
 TARGET_USES_MKE2FS := true
 
 # TWRP specific build flags
-TW_THEME := landscape_hdpi
+TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 510
 TW_DEFAULT_BRIGHTNESS := 128
